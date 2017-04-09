@@ -1,5 +1,7 @@
 # This is a simple Single Page Application with NodeJS / ExpressJS, and jquery
-<h3>Install dependencies:</h3>
+<p><h3>Install dependencies:</h3>(placed on src/ folder)</p>
 <p>$<code>npm i</code></p>
-<h3>Create the bundles application</h3>
+<h3>Create the application's bundle:</h3>
 <p>$<code>npm run build</p></code>
+<h3>Run the application</h3>
+<p>$<code>npm run app</p></code>
