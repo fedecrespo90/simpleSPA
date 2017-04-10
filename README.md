@@ -2,7 +2,5 @@
 <p>(placed on src/ folder)</p>
 <h3>Installing dependencies:</h3>
 <p>$<code>npm i</code></p>
-<h3>Creating the application's bundle:</h3>
+<h3>Creating the application's bundle and running the application:</h3>
 <p>$<code>npm run build</p></code>
-<h3>Runing the application:</h3>
-<p>$<code>npm run app</p></code>

@@ -4,7 +4,7 @@
   "description": "This is a store for babies.",
   "main": "server.js",
   "scripts": {
-    "build": "browserify client/app/app.js | uglifyjs > client/app/bundle.js",
+    "build": "browserify client/app/app.js | uglifyjs > client/app/bundle.js && babel-node ./server",
     "watch": "watchify client/app/app.js -o uglifyjs > client/app/bundle.js",
     "app": "babel-node ./server"
   },
