@@ -6,6 +6,13 @@ const http = require("http").Server(app);
 const morgan = require("morgan");
 const PORT = 3000;
 
+const bodyParser = require('body-parser');
+
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: true }));
+// parse application/json
+app.use(bodyParser.json());
+
 app.use(morgan('dev'));
 app.use(express.static(__dirname + '/../client/app'));
 console.log(__dirname);

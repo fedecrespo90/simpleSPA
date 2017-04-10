@@ -1,6 +1,7 @@
 import * as express from "express";
 import * as data from "../model/data";
 
+let json = require('json-update');
 let api = express.Router();
 
 module.exports = function () {
@@ -8,6 +9,19 @@ module.exports = function () {
     /* * * GET CONFIG * * */
     api.get('/config', function (req, res) {
         res.send(data.config);
+    });
+
+    /* * * REORDER * * */
+    api.post('/reorder', function (req, res) {
+      var toArray = req.body.order.split(',');
+      json.update('server/model/data.json', { order: toArray })
+      .then(function (data) {
+        console.log('Order was changed');
+        res.sendStatus(200);
+      }).catch(function (err) {
+        console.log(err);
+        rest.send(err);
+      });
     });
 
     /* * * GET PRODUCTS * * */

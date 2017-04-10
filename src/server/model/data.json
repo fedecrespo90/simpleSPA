@@ -1,20 +1,42 @@
 {
-    "config": {
-        "name": "Baby Store!",
-        "colours": {
-            "white": "#FEF9FF",
-            "blue": "#AFD8D9",
-            "yellow": "#FFECA2",
-            "pink": "#F1BAB4",
-            "green": "#A6E8A5"
-        },
-        "baseUrl": {
-            "dev": "http://localhost:3000/"
-        }
+  "config": {
+    "name": "Baby Store!",
+    "colours": {
+      "white": "#FEF9FF",
+      "blue": "#AFD8D9",
+      "yellow": "#FFECA2",
+      "pink": "#F1BAB4",
+      "green": "#A6E8A5"
     },
-    "products": [
-        { "id":"id1", "name": "Product1", "description": "description1", "image": "portfolio/thumbnails/1.jpg", "order": 0 },
-        { "id":"id2", "name": "Product2", "description": "description2", "image": "portfolio/thumbnails/2.jpg", "order": 1 },
-        { "id":"id3", "name": "Product3", "description": "description3", "image": "portfolio/thumbnails/3.jpg", "order": 2 }
-    ]
+    "baseUrl": {
+      "dev": "http://localhost:3000/"
+    }
+  },
+  "products": [
+    {
+      "id": "id1",
+      "name": "Product1",
+      "description": "description1",
+      "image": "portfolio/thumbnails/1.jpg",
+      "order": 0
+    },
+    {
+      "id": "id2",
+      "name": "Product2",
+      "description": "description2",
+      "image": "portfolio/thumbnails/2.jpg",
+      "order": 1
+    },
+    {
+      "id": "id3",
+      "name": "Product3",
+      "description": "description3",
+      "image": "portfolio/thumbnails/3.jpg",
+      "order": 2
+    }
+  ],
+  "order": [
+    "2",
+    "1"
+  ]
 }
